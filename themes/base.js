@@ -225,6 +225,7 @@ class BaseTooltip extends Tooltip {
       this.textbox.getAttribute(`data-${mode}`) || '',
     );
     this.root.setAttribute('data-mode', mode);
+    this.root.classList.remove('ql-editing');
   }
 
   restoreFocus() {
